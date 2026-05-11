@@ -1,0 +1,16 @@
+{% extends "master.html" %}
+
+{% block title %}Comments{% endblock %}
+
+{% block content %}
+<h1>Comments</h1>
+
+<ul>
+{% for comment in mycomments %}
+   <li>
+        Post ID: {{ comment.Post.ID }} - {{ comment.Content }}
+    </li>
+{% endfor %}
+</ul>
+
+{% endblock %}

@@ -1,0 +1,17 @@
+{% extends "master.html" %}
+
+{% block title %}Blogs{% endblock %}
+
+{% block content %}
+<p><a href="/">Back</a></p>
+<h1>Blogs</h1>
+
+<ul>
+{% for post in myposts %}
+    <li>
+        <a href="/blogs/details/{{ post.ID }}/">{{ post.Title }}</a>
+    </li>
+{% endfor %}
+</ul>
+
+{% endblock %}

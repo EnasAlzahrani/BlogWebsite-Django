@@ -1,0 +1,14 @@
+{% extends "master.html" %}
+
+{% block title %}Blog Details{% endblock %}
+
+{% block content %}
+
+<h1>{{ post.Title }}</h1>
+
+<p>{{ post.Content }}</p>
+
+<p>Category: {{ post.Category }}</p>
+<p>Date: {{ post.Date_Published }}</p>
+
+{% endblock %}
